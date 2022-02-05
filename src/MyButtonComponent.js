@@ -10,27 +10,50 @@ import styled from "styled-components";
 
 // export default MyButtonComponent
 
-const PropsButton = () => {
+// const PropsButton = () => {
+//     return (
+//     <div>
+//         <Button>Sign In</Button>
+//         <Button disabled>Sign In</Button>
+//     </div>  
+//     );
+// }
+
+// export default PropsButton;
+
+const MyButton = () => {
+    const[count,setCount] = useState(0);
+
     return (
-    <div>
-        <Button>Sign In</Button>
-        <Button disabled>Sign In</Button>
-    </div>  
+        <Button onClick={() => setCount(count + 1)}> 
+            You clicked {count} times
+        </Button>
     );
 }
 
-export default PropsButton;
+export default MyButton;
 
 const Button = styled.button`
-    background: ${(props) => 
-        props.disabled
-        ?"grey"
-        :"linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"};
-    padding:12px 0;
+    background: linear-gradient(91.4deg,#2fb8ff, 0%, #9eecd9 100%);
+    padding: 12px 0;
     width: 200px;
     border: none;
     border-radius: 30px;
     color: white;
     font-weight: bold;
-    font-family: Segoe UI, sans-serif;
-`
+    font-family: SegoeUI,sans-serif;
+`;
+
+// const Button = styled.button`
+//     background: ${(props) => 
+//         props.disabled
+//         ?"grey"
+//         :"linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"};
+//     padding:12px 0;
+//     width: 200px;
+//     border: none;
+//     border-radius: 30px;
+//     color: white;
+//     font-weight: bold;
+//     font-family: Segoe UI, sans-serif;
+// `
