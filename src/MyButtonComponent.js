@@ -21,7 +21,10 @@ const MyButton = () => {
 export default MyButton;
 
 const Button = styled.button`
-    background:linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%);
+    background: ${props} => {
+        props.disabled
+        ?"grey"
+    :"linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"};
     padding:12px 0;
     width: 200px;
     border: none;
