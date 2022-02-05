@@ -10,11 +10,12 @@ import styled from "styled-components";
 // export default MyButtonComponent
 
 const MyButton = () => {
-    return 
+    return (
     <div>
         <Button>Sign In</Button>
         <Button>Sign In</Button>
     </div>  
+    );
 }
 
 export default MyButton;
