@@ -13,7 +13,7 @@ const MyButton = () => {
     return (
     <div>
         <Button>Sign In</Button>
-        <Button>Sign In</Button>
+        <Button disabled>Sign In</Button>
     </div>  
     );
 }
