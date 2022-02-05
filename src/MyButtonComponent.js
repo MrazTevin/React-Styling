@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 // export default MyButtonComponent
 
-const MyButton = () => {
+const PropsButton = () => {
     return (
     <div>
         <Button>Sign In</Button>
@@ -18,13 +18,13 @@ const MyButton = () => {
     );
 }
 
-export default MyButton;
+export default PropsButton;
 
 const Button = styled.button`
-    background: ${props} => {
+    background: ${(props) => 
         props.disabled
         ?"grey"
-    :"linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"};
+        :"linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"};
     padding:12px 0;
     width: 200px;
     border: none;
