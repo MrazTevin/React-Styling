@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import MyButton from './MyButtonComponent';
 
 const MyCard = () => {
-    return <Wrapper>The button should be active</Wrapper>
+    return (
+        <Wrapper>The button should be active
+        <MyButton isActive={false} /> 
+        </Wrapper>
+    );
 }
 
 export default MyCard;
