@@ -43,21 +43,35 @@ import styled from "styled-components";
 // }
 
 const MyButton = (props) => {
-    return <button isActive={props.isActive}>Click Me!</button>;
+    return <Button isActive={props.isActive}>Click Me!</Button>;
 } 
 
 export default MyButton;
 
-const Button = styled.button`
-    background: linear-gradient(91.4deg,#2fb8ff, 0%, #9eecd9 100%);
+const Button = styled.button `
+    background: $ {(props) =>
+    props.isActive
+        ? "linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"
+        :"grey"};
     padding: 12px 0;
     width: 200px;
     border: none;
     border-radius: 30px;
     color: white;
     font-weight: bold;
-    font-family: SegoeUI,sans-serif;
+    font-family: Segoe UI, sans-serif;
 `;
+// const Button = styled.button`
+//     background: linear-gradient(91.4deg,#2fb8ff, 0%, #9eecd9 100%);
+//     padding: 12px 0;
+//     width: 200px;
+//     border: none;
+//     border-radius: 30px;
+//     color: white;
+//     font-weight: bold;
+//     font-family: SegoeUI,sans-serif;
+// `;
+
 
 // const Button = styled.button`
 //     background: ${(props) => 
