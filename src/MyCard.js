@@ -5,7 +5,7 @@ import MyButton from './MyButtonComponent';
 const MyCard = () => {
     return (
         <Wrapper>The button should be active
-        <MyButton isActive={false} /> 
+        <MyButton isActive={true} /> 
         </Wrapper>
     );
 }
@@ -23,5 +23,5 @@ const Wrapper  = styled.div `
     gap: 30px;
     justify-items: center;
     align-items: center;
-    font-family: SegoeUI, sans-serif;
+    font-family: Segoe UI, sans-serif;
 `;
