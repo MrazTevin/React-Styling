@@ -21,26 +21,26 @@ import styled from "styled-components";
 
 // export default PropsButton;
 
-const MyButton = () => {
-    // const[count,setCount] = useState(0);
-    const ref = useRef(null)
+// const MyButton = () => {
+//     // const[count,setCount] = useState(0);
+//     const ref = useRef(null)
 
-    // useEffect(() => {
-    //     document.title = `You clicked ${count} times`;
-    // },[count]);
+//     // useEffect(() => {
+//     //     document.title = `You clicked ${count} times`;
+//     // },[count]);
 
-    useEffect( ()=> {
-        if (ref) {
-            ref.current.click()
-            // console.log('ref',ref.current);
-        }
-    })
-    return (
-        <Button onClick={() => alert("You clicked!")} ref={ref}> 
-            Click me
-        </Button>
-    );
-}
+//     useEffect( ()=> {
+//         if (ref) {
+//             ref.current.click()
+//             // console.log('ref',ref.current);
+//         }
+//     })
+//     return (
+//         <Button onClick={() => alert("You clicked!")} ref={ref}> 
+//             Click me
+//         </Button>
+//     );
+// }
 
 export default MyButton;
 
