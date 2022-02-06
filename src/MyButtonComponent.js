@@ -49,7 +49,7 @@ const MyButton = (props) => {
 export default MyButton;
 
 const Button = styled.button `
-    background: $ {(props) =>
+    background: ${(props) =>
     props.isActive
         ? "linear-gradient(91.4deg,#2fb8ff 0%,#9eecd9 100%)"
         :"grey"};
