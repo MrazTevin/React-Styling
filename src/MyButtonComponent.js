@@ -22,11 +22,12 @@ import styled from "styled-components";
 // export default PropsButton;
 
 const MyButton = () => {
-    const[count,setCount] = useState(0);
+    // const[count,setCount] = useState(0);
+    const ref = useRef(null)
 
-    useEffect(() => {
-        document.title = `You clicked ${count} times`;
-    },[count]);
+    // useEffect(() => {
+    //     document.title = `You clicked ${count} times`;
+    // },[count]);
 
     return (
         <Button onClick={() => alert("You clicked!")}> 
