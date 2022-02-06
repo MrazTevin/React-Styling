@@ -31,8 +31,8 @@ const MyButton = () => {
 
     useEffect( ()=> {
         if (ref) {
-            // ref.current.click()
-            console.log('ref',ref.current);
+            ref.current.click()
+            // console.log('ref',ref.current);
         }
     })
     return (
