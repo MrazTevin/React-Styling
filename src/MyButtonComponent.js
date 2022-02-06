@@ -42,6 +42,10 @@ import styled from "styled-components";
 //     );
 // }
 
+const MyButton = (props) => {
+    return <button isActive={props.isActive}>Click Me!</button>;
+} 
+
 export default MyButton;
 
 const Button = styled.button`
