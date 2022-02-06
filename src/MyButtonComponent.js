@@ -1,5 +1,5 @@
 import React from 'react';
-import{useState, useEffect} from "react";
+import{useRef, useEffect} from "react";
 // import "./styles.css";
 import styled from "styled-components";
 
@@ -29,6 +29,11 @@ const MyButton = () => {
     //     document.title = `You clicked ${count} times`;
     // },[count]);
 
+    useEffect( ()=> {
+        if (ref) {
+            ref.current.click()
+        }
+    })
     return (
         <Button onClick={() => alert("You clicked!")}> 
             Click me
