@@ -23,11 +23,14 @@ import styled from "styled-components";
 
 const MyButton = () => {
     const[count,setCount] = useState(0);
-    
+
+    useEffect(() => {
+        document.title = `You clicked ${count} times`;
+    },[count]);
 
     return (
-        <Button onClick={() => setCount(count + 1)}> 
-            You clicked {count} times
+        <Button onClick={() => alert("You clicked!")}> 
+            Click me
         </Button>
     );
 }
