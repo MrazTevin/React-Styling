@@ -35,7 +35,7 @@ const MyButton = () => {
         }
     })
     return (
-        <Button onClick={() => alert("You clicked!")}> 
+        <Button onClick={() => alert("You clicked!")} ref={ref}> 
             Click me
         </Button>
     );
